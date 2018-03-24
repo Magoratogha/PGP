@@ -29,7 +29,6 @@
 		    	</ul>
 		  	</div>
 		</nav>
-
 		<div class="row mt-5">
 			<div class="col-12 col-lg-5 py-5 px-xl-5 align-self-center">
 				<div class="card border-dark text-center">
@@ -43,7 +42,7 @@
 							   	<input type="password" class="form-control" id="InputContraseña" placeholder="Contraseña">
 							</div>
 							<button type="submit" class="btn btn-block btn-dark mb-2">Confirmar</button>
-							<button type="button" class="btn btn-link">¿Olvidaste tu constraseña?</button>
+							<button type="button" class="btn btn-link" data-toggle="modal" data-target="#recuperarContraseña">¿Olvidaste tu constraseña?</button>
 						</form>		
 					</div>
 				</div>
@@ -101,6 +100,32 @@
 						  	</div>
 						</form>
 					</div>
+				</div>
+			</div>
+		</div>
+		<!--Ventana modal-->
+		<div class="modal fade" id="recuperarContraseña" tabindex="-1" role="dialog" aria-labelledby="recuperarContraseña" aria-hidden="true">
+			<div class="modal-dialog modal-dialog-centered">
+				<div class="modal-content">
+					<div class="modal-header">
+				        <h5 class="modal-title">Recuperar contraseña</h5>
+				        <button type="button" class="close" data-dismiss="modal" aria-label="Cerrar">
+				        	<span aria-hidden="true">&times;</span>
+				        </button>
+				    </div>
+				    <div class="modal-body px-4">
+				    	<form>
+							<div class="form-group">
+						    	<label for="EmailRecuperacion">Correo electrónico:</label>
+						    	<input type="email" class="form-control" id="EmailRecuperacion" aria-describedby="EmailRecuperacion" placeholder="alguien@ejemplo.com">
+						    	<small id="EmailRecuperacion" class="form-text text-muted">Escribe la dirección del correo electrónico asociada a tu cuenta.</small>
+						  	</div>
+						</form>
+				    </div>
+				    <div class="modal-footer">
+				        <button type="button" class="btn btn-outline-dark" data-dismiss="modal">Cerrar</button>
+				        <button type="button" class="btn btn-dark">Confirmar</button>
+				    </div>
 				</div>
 			</div>
 		</div>
